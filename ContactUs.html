@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	    <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" type = "text/css" href = "styles4.css">
+        <title>Contact Us</title>
+    </head>
+<body>
+    <div class = "navbar custom-navbar navbar-fixed-top" role="navigation">
+        <header>
+            <a href = "HomePageV2.html">
+            <img src = "/Users/prabhsethi1/Desktop/Spartan Restaurant HTML:CSS:JS Code/spartan res logo.png" width = 100 height = 85
+            alt = "Spartan Restaurant Logo"></a>
+	<nav>
+		<div class = "navigation-menu">
+            <ul style = "list-style-type:none;">
+                <li><a href="HomePageV2.html" class="nav-item nav-button">Home</a></li>
+                <li><a href="Menu.html" class="nav-item nav-button">Menu</a></li>
+                <li><a href="AboutUs.html" class="nav-item nav-button">About Us</a></li>
+                <li><a href="OrderNow.html" class="nav-item nav-button">Order Now</a></li>
+				<li><a href="ContactUs.html" class ="nav-item nav-button">Contact Us</a></li>
+            </ul>
+        </div>
+	</nav>
+        </header>
+    
+	<div class= "ContactUs">
+		<h1>Contact Us</h1>
+		<form method = "post" action = "ThankYou.html">
+            <p><label> Email
+                <input name = "email" id = "email" type = "email" required size = "30" maxlength = "30"></label>
+                <p><label> Username
+                <input name = "name" id = "username" type = "text" required size = "20" maxlength = "20"></label>
+                <p><label> Message
+                <input name = "message" id = "message" type ="text" maxlength="20"></label>
+                </p></label>
+                <button id = "sign-up" onclick="send()">Submit Query</button>
+            </label>
+		</form>
+	</div>
+    <div class= "reserve">
+        <h3>Reserve a table</h3>
+        <form method = "post" action = "ThankYou.html">
+	<div class="form-group">	
+            <p>Fill out your information to reserve a table at our restaurant:</p>
+			<input name = "name" id = "username" type = "text" required size = "20" maxlength = "20"></label>
+			<input type = "tel" name = "phone" id = "tel" placeholder = "(000) 000-0000" required/>
+			<button type = "submit" value = "submit">Submit</button>
+		</form>
+			</div>
+    <div class="contact-info">
+				<h3>
+					Contact Information
+				</h3>			
+					<p><span>(408)-924-3400</span>
+                    <span>spartanrestaurant@gmail.com</span>
+					<span>1 Washington Square</span>
+					<span>San Jose, 95112 CA</span></p>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3172.309041633864!2d-121.88326554949353!3d37.33519164500264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fccb864de43d5%3A0x397ffe721937340e!2sSan%20Jos%C3%A9%20State%20University!5e0!3m2!1sen!2sus!4v1631126821424!5m2!1sen!2sus" width="350" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+	</div>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+    <script src="ContactUs.js"></script>
+
+</body>
+</html>

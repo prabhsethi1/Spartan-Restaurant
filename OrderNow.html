@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" type = "text/css" href = "styles4.css">
+        <script src = "OrderNow.js"></script>
+        <title>Spartan Restaurant</title>
+    </head>
+
+    <script>
+        function cal(){
+            var p1 = document.getElementById("prod1").value;
+            var p2 = document.getElementById("prod2").value;
+            var p3 = document.getElementById("prod3").value;
+            
+    
+            var order_cost  = (p1*1)+(p2*1)+(p3*1);
+            var sales_tax =  order_cost*0.0725;
+            var final_price = sales_tax+order_cost;
+    
+            final_price=final_price.toFixed(2);
+            sales_tax=sales_tax.toFixed(2);
+    
+            var div = document.getElementById("set");
+            div.style.visibility='visible';
+            var total_message = "Your total order cost is going to be $"+final_price+" that includes "+sales_tax+" (With a sales tax of 7.25% added to the price of $"+order_cost+")";
+            document.getElementById("set").innerHTML=total_message;
+        }
+    </script>    
+<body>
+    <div class = "OrderNow">
+        <h1>Input the cost of the item you wish to order below based off the menu of items </h1>
+        <form action = '#'>
+            <label>Main Entree
+                <input type ="number" id = "prod1" min="0" max = "1000" onkeyup="checkNumItems();"></label><br><br>
+            </label>
+            <label>Side
+                <input type = "number" id = "prod2" min="0" max = "1000" onkeyup="checkNumItems();"></label><br><br>
+            </label>
+            <label>Drink
+                <input type = "number" id = "prod3" min="0" max = "1000" onkeyup="checkNumItems();"></label><br><br>
+            </label>  
+            <span id="msg"></span><br>
+                <input type="button" id = CalculateButton value="Total order cost" onclick="cal()">
+            </div>
+        </div>
+    
+        <div id="set" style="border: solid 15px tan;color: darkolivegreen;width: 20%;margin-left: auto;margin-right: auto;margin-top: 8px;visibility: hidden; font-weight: bold;font-size: 35px;">   
+        </div>
+    <div class = "navbar custom-navbar navbar-fixed-top" role="navigation">
+        <header>
+            <a href = "HomePageV2.html">
+            <img src = "/Users/prabhsethi1/Desktop/Spartan Restaurant HTML:CSS:JS Code/spartan res logo.png" width = 100 height = 85
+            alt = "Spartan Restaurant Logo">
+            </a>
+	<nav>
+		<div class = "navigation-menu">
+            <ul style = "list-style-type:none;">
+                <li><a href="HomePageV2.html" class="nav-item nav-button">Home</a></li>
+                <li><a href="Menu.html" class="nav-item nav-button">Menu</a></li>
+                <li><a href="AboutUs.html" class="nav-item nav-button">About Us</a></li>
+                <li><a href="OrderNow.html" class="nav-item nav-button">Order Now</a></li>
+				<li><a href="ContactUs.html" class ="nav-item nav-button">Contact Us</a></li>
+            </ul>
+        </div>
+	</nav>
