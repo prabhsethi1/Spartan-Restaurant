@@ -1,3 +1,3 @@
 # Spartan-Restaurant
 
-I'm a student at San Jose State University, graduating in December 2021, and studying Business Admin: MIS. 
+This project describes Spartan Restaurant, a web app for those interested in ordering from our fast casual restaurant and finding more information about our restaurant.
